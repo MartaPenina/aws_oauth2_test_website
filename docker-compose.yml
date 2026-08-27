@@ -1,20 +1,40 @@
-version: "3.8"
-
 services:
   oauth2-proxy:
     image: quay.io/oauth2-proxy/oauth2-proxy:v7.15.4
-    container_name: oauth2-proxy
+    container_name: authentication-proxy
     ports:
       - "4180:4180"
     extra_hosts:
       - "host.docker.internal:host-gateway"
-    command:
-      - --provider=github
-      - --client-id=${GITHUB_CLIENT_ID}
-      - --client-secret=${GITHUB_CLIENT_SECRET}
-      - --cookie-secret=${COOKIE_SECRET}
-      - --email-domain=*
-      - --github-user=${GITHUB_ALLOWED_USERS}
-      - --upstream=http://host.docker.internal:8080
-      - --http-address=0.0.0.0:4180
-      - --redirect-url=http://localhost/oauth2/callback
+    environment:
+      OAUTH2_PROXY_PROVIDER: oidc
+      OAUTH2_PROXY_OIDC_ISSUER_URL: http://localhost:8080/realms/aws-oauth2
+      OAUTH2_PROXY_SKIP_OIDC_DISCOVERY: "true"
+      OAUTH2_PROXY_LOGIN_URL: http://localhost:8080/realms/aws-oauth2/protocol/openid-connect/auth
+      OAUTH2_PROXY_REDEEM_URL: http://keycloak:8080/realms/aws-oauth2/protocol/openid-connect/token
+      OAUTH2_PROXY_OIDC_JWKS_URL: http://keycloak:8080/realms/aws-oauth2/protocol/openid-connect/certs
+      OAUTH2_PROXY_INSECURE_OIDC_SKIP_ISSUER_VERIFICATION: "true"
+      OAUTH2_PROXY_CLIENT_ID: aws-oauth2-test-website
+      OAUTH2_PROXY_CLIENT_SECRET: ${KEYCLOAK_CLIENT_SECRET}
+      OAUTH2_PROXY_COOKIE_SECRET: ${COOKIE_SECRET}
+      OAUTH2_PROXY_EMAIL_DOMAINS: "*"
+      OAUTH2_PROXY_UPSTREAMS: http://host.docker.internal:80
+      OAUTH2_PROXY_HTTP_ADDRESS: 0.0.0.0:4180
+      OAUTH2_PROXY_REDIRECT_URL: http://localhost/oauth2/callback
+    depends_on:
+      - keycloak
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0
+    container_name: keycloak
+    ports:
+      - "8080:8080"
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
+    command: start-dev
+    volumes:
+      - keycloak_data:/opt/keycloak/data
+
+volumes:
+  keycloak_data:
