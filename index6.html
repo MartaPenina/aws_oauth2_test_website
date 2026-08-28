@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Пеніна Марта">
+    <meta name="keywords" content="HTML, CSS, Mysite">
+    <meta name="description" content="Using Bootstrap 5">
+    <meta name="robots" content="index, follow">
+    <title>Природні умови&ресурси</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="fonts/bi/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--Підключення до сторінки Google-шрифт-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!--Підключення до сторінки Google-шрифт-->
+    <link href="images/flag.svg" rel="icon">
+</head>
+
+<body>
+
+    <!--CENTRAL COLUMN-->
+    <div class="container">
+        <div class="flag_svg">
+            <h1 class="title">Туреччина та її краєвиди</h1>
+            <img src="images/flag_turkey.svg" alt="Прапор Туреччини" class="flag_improved">
+        </div>
+        <br>
+        <!--Navbar-->
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><i class="bi bi-airplane"></i></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page"
+                                        href="index.html#">Головна</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="index2.html#">Кухня&Солодощі</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle"
+                                        id="navbarDfileropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Природні ресурси та культура
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item"
+                                                href="index6.html">Природні
+                                                умови&ресурси</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="index7.html#">Населення
+                                                і культура</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="index8.html">Національні свята</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="index4.html">Туризм</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="index5.html#">Автор</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Шукати</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--Navbar-->
+
+
+
+        <div class="row">
+            <div class="col">
+                <br>
+                <img src="images//природа1.jpg" alt="Природні умови & ресурси" class="img_food">
+                <div class="square">
+                    Природні умови & ресурси
+                </div>
+                <br>
+            </div>
+
+            <div class="col">
+                <br>
+                <div class="text_paragraph text_with_frame">
+                    <h3 class="list_text">Туреччина</h3>
+                    <p class="text_with_retreat">
+                        Це гірська країна. Середня висота її території над рівнем моря
+                        становить 1132 м. Майже всю її територію займає Малоазійське нагір'я. На півночі Туреччини
+                        простягаються Північноанатолійські (Понтійські) гори, а на півдні території розташована
+                        гірська система Тавр.
+                    </p>
+                    <p class="text_with_retreat">
+                        <u>Природні ресурси Туреччини</u> ще недостатньо вивчені, проте там виявлені великі запаси
+                        різноманітних корисних копалин. У надрах країни залягають кам'яне і буре вугілля, нафта,
+                        різні рудні копалини: залізо, свинець, цинк, марганець, ртуть, сурма, молібден. По запасах
+                        хромової руди Туреччина займає друге місце в капіталістичному світі. Тут маються найбагатші
+                        поклади вольфраму, відомо біля ста родовищ міді.
+                    </p>
+                    <p class="text_with_retreat">
+                        З нерудних копалин відомі родовища селітри,
+                        сірки, мармуру, морської ненки, повареної солі. Природною солеварнею, що постачає сіллю всю
+                        Туреччину, є <strong>оз. Туз</strong>.
+                    </p>
+                </div>
+                <br>
+            </div><!--end col-->
+        </div><!--end row-->
+
+
+        <div class="row">
+            <div class="col">
+                <!--collapse-->
+                <p class="bisiness_card">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Цікавий факт про озеро Туз
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <h3 class="list_text"><strong>Озеро Туз</strong></h3>
+                        <h3 class="list_text">Це одне з найбільших озер, наявних на території Туреччини.</h3>
+                        <ul class="text_paragraph">
+                            <li>
+                                Воно вбирає в себе два повноводних струмка і утворює солоне болото. Проте в літній час,
+                                коли
+                                світло сонця досягає підвищеної температури, більше вісімдесяти відсотків озера
+                                пересихає, і
+                                з’являється тридцяти сантиметровий шар солі. </li>
+                            <li>
+                                Зберегти баланс допомагають випадають опади і
+                                підземні джерела. У зимовий час шар солі йде з-за великої кількості прісної води, яка
+                                приходить з найближчих поверхневих і ґрунтових вод.</li>
+                            <li>
+                                Це диво природи розташовується в Центральній Анатолії, всього в двох годинах їзди від
+                                мулу
+                                Коньї. Місцеві жителі старанно займаються промисловістю, пов’язаної з обробкою солі та
+                                її
+                                реалізацією на незліченних ринках Туреччини.</li>
+                            <li>
+                                Між іншим, Туреччина щорічно викачує тут близько ста п’ятдесяти тонн солі, яка за
+                                хімічним
+                                складом дуже нагадує кухонну.
+                            </li>
+                            <li>
+                                Містяться в озері Туз бактерії і мікроводорості при високому
+                                випромінювання ультрафіолету надають воді червоний відтінок. Такі зміни в кольорі, немов
+                                магнітом, притягують цілі зграї фламінго, боривітри і величезна кількість білолобих
+                                гусей.
+                            </li>
+                        </ul>
+                        <img src="images/10.jpg" alt="Озеро Туз" class="img_food">
+                    </div>
+                </div>
+                <!--collapse-->
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col">
+                <br>
+                <!--Spinners
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+
+                Spinners-->
+                <div class="img-container">
+                    <img src="images/123123123.jpg" alt="Озеро Туз" class="img_picture">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col">
+                <i class="bi bi-arrow-bar-down improve_icons2"></i>
+                <br><br>
+                <!--Card title-->
+                <div class="card nature_location" style="width: 30rem;">
+                    <img src="images/клімат.jpg" alt="Природні умови & ресурси" class="img_food">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Клімат Туреччини </strong><i
+                                class="bi bi-heart-fill style_icon_heart"></i>
+                        </h5>
+                        <p class="card-text text_with_retreat">
+                            Територія Туреччини знаходиться у межах субтропічного кліматичного поясу.  Переважна частина Туреччини має літній сезон зі значними
+                            опадами та зимовий сезон з помірними опадами, іноді із снігом, особливо в гірських областях.
+                            Такий різноманітний клімат дозволяє розвивати різні види сільськогосподарської діяльності в
+                            різних регіонах Туреччини. </p>
+                        <p class="card-text text_with_retreat">
+                            Чорноморське побережжя Туреччини відрізняється помірковано теплим кліматом, що
+                            характеризується великою вологістю, порівняно рівномірним розподілом опадів по сезонах року,
+                            печінкою влітку та прохолодною зимою. Середня температура січня на побережжі –1-5, +7°,
+                            липня +22, +24°.</p>
+                        <p class="card-text text_with_retreat">
+                            Високі Понтійські гори взимку захищають Чорноморське побережжя від впливу холодних
+                            повітряних мас внутрішніх районів країни, а Чорне море зменшує вплив холодних північних
+                            вітрів. Крім того, східна частина Чорноморського узбережжя захищена від проникнення холодних
+                            вітрів високими Кавказькими горами.
+                        </p>
+                        <a href="index7.html#" target="_blank" class="btn btn-dark">А про
+                            культуру Туреччини читай тут!</a>
+                    </div>
+                </div>
+                <!--Card title-->
+
+            </div>
+
+            <div class="col">
+                <i class="bi bi-arrow-bar-down improve_icons2"></i>
+                <br><br>
+                <!--Card title-->
+                <div class="card nature_location2" style="width: 30rem;">
+                    <img src="images/природні умови та ресурси.jpg" alt="Природні умови & ресурси" class="img_food">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Рослинний світ Туреччини </strong><i
+                                class="bi bi-heart-fill style_icon_heart"></i>
+                        </h5>
+                        <p class="card-text text_with_retreat">
+                            Флора Туреччини включає близько 6700 видів рослин, з них велика частин-це представники
+                            сімейств складноцвітих, бобових і крестоцвітних.
+                        </p>
+                        <p class="card-text text_with_retreat">
+                            Рослинний покрив Туреччини дуже різноманітний. Він змінюється в залежності від кліматичних
+                            умов і рельєфу місцевості. Значні зміни в природний рослинний світ Туреччини вніс людину:
+                            великі простори степів розорані, нанесена велика втрата лісам, особливо в Західній Анатолії
+                            - найбільш населеної частини Туреччини.
+                        </p>
+                        <p class="card-text text_with_retreat">
+                            На південному узбережжі Середземного моря переважають субтропічні рослини, такі як пальми,
+                            оливки та цитрусові. У гірських регіонах, особливо на сході країни,  велика
+                            кількість хвойних лісів та альпійських рослин. 
+                        </p>
+                        <p class="card-text text_with_retreat">
+                            На сході Туреччини також ростуть численні
+                            види лікарських трав, такі як тим'ян, шавлія та чорниця. Внутрішня частина країни відома
+                            своєю степовою рослинністю, де ростуть різноманітні види трав'янистих рослин, таких як
+                            полин, ячмінь і соняшник.
+                        </p>
+                        <a href="index8.html" target="_blank" class="btn btn-dark">А про
+                            національні свята Туреччини читай тут!</a>
+                    </div>
+                </div>
+                <!--Card title-->
+
+            </div>
+        </div>
+
+
+        <!--1_row-->
+        <div class="row">
+            <div class="col">
+                <br><br>
+                <!--Pagination-->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Попередні</a>
+                         </li>
+                         <li class="page-item"><a class="page-link"
+                               href="index.html#">1</a></li>
+                         <li class="page-item"><a class="page-link"
+                               href="index2.html#">2</a></li>
+                         <li class="page-item"><a class="page-link"
+                               href="index6.html">3</a></li>
+                         <li class="page-item"><a class="page-link"
+                               href="index7.html#">4</a></li>
+                         <li class="page-item"><a class="page-link"
+                               href="index8.html">5</a></li>
+                         <li class="page-item"><a class="page-link"
+                               href="index4.html">6</a></li>
+                         <li class="page-item"><a class="page-link"
+                               href="index5.html#">7</a></li>
+                         <li class="page-item">
+                            <a class="page-link" href="#">Наступні</a>
+                         </li>
+                    </ul>
+                </nav>
+                <!--Pagination-->
+            </div>
+        </div>
+
+           <!--footer-->
+   <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <div class="footer_location ">
+             <ul class="nav flex-column ">
+                <li class="nav-item mb-2"><a href="index.html#" class="nav-link p-0 text-body-secondary">Головна</a></li>
+                <li class="nav-item mb-2"><a href="index2.html#" class="nav-link p-0 text-body-secondary">Кухня&Солодощі</a></li>
+                <li class="nav-item mb-2"><a href="index6.html" class="nav-link p-0 text-body-secondary">Природні умови&ресурси</a></li>
+                <li class="nav-item mb-2"><a href="index7.html#" class="nav-link p-0 text-body-secondary">Населення і культура</a></li>
+                <li class="nav-item mb-2"><a href="index8.html" class="nav-link p-0 text-body-secondary">Національні свята</a></li>
+                <li class="nav-item mb-2"><a href="index4.html" class="nav-link p-0 text-body-secondary">Туризм</a></li>
+                <li class="nav-item mb-2"><a href="index5.html#" class="nav-link p-0 text-body-secondary">Автор</a></li>
+                
+              </ul>
+            </div>
+          </div>
+    
+  
+        
+
+  <div class="col-md-5 offset-md-1 mb-3">
+    <form>
+      <h3 class="list_text">Підписуйтесь на мої нові публікації <i class="bi bi-heart-fill style_icon_heart"></i></h3>
+      <p>Щомісячний дайджест нової та цікавої інформації від нас</p>
+      <div class="improve_icons4">
+       <i class="bi bi-arrow-down-square-fill"></i>
+      </div>
+      <br>
+      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+        <label for="newsletter1" class="visually-hidden">Електронна пошта</label>
+        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+        <button class="btn btn-primary" type="button">Підписатись</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+    <p class="list_text">&copy; 2023 Пеніна Марта
+       <a class="link-body-emphasis"
+          href="https://instagram.com/marrrta_07?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><img
+             src="images/inst.png" alt="Instagram"></a>
+    </p>
+ </div>
+</footer>
+</div>
+<!--footer-->
+
+    </div><!--end container-->
+    <!--CENTRAL COLUMN-->
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

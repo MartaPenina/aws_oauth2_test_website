@@ -1,0 +1,415 @@
+/*Підключення до сторінки Google-шрифт*/
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+@font-face {
+  font-family: "Czizh";
+
+  src: url("../fonts/Czizh\ Body.ttf");
+}
+
+/*CENTRAL COLUMN container*/
+.container {
+  background-color: #fbd7e6;
+  padding-top: 20px;
+}
+
+/*Icon container*/
+.style_icon_heart {
+  font-size: 25px;
+  color: rgb(219, 147, 147);
+}
+
+h1 {
+  font-family: "Czizh";
+  font-size: 50px;
+  color: #000;
+  text-align: left;
+}
+
+.text_with_frame {
+  border: 2px solid #000;
+  /* Товщина, стиль та колір рамки */
+  padding: 10px;
+  /* Внутрішні відступи від тексту до рамки */
+
+}
+
+.text_with_dotted_frame {
+  border: 6px dotted #000;
+  /* Товщина, стиль та колір рамки */
+  padding: 10px;
+  /* Внутрішні відступи від тексту до рамки */
+  margin-left: 150px;
+  margin-right: 170px;
+
+}
+
+.text_with_retreat {
+  text-indent: 20px;
+  /*Відступ на початку абзацу*/
+}
+
+/*Owl Carousel*/
+.owl-carousel .item {
+  height: 220px;
+  /*background: rgba(0, 131, 218);*/
+
+}
+
+.card {
+  margin-left: 66px;
+}
+
+h5 {
+  text-align: center;
+}
+
+.gap_line {
+  height: 10px;
+}
+
+.dropdown {
+  text-align: center;
+}
+
+.modal-title {
+  color: rgb(90, 10, 10);
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+
+.title::before {
+  content: " ";
+  /* Символ вертикальної риски */
+  font-size: 65px;
+  margin-right: 17px;
+  /* Простір між рискою і текстом заголовка */
+  border-left: 2px solid rgb(0, 0, 0);
+  /* Риска як горизонтальна лінія */
+  height: 1em;
+  /* Рівняємо висоту риски заголовку */
+}
+
+/* Стилі для заголовка (це лише для прикладу) */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Czizh";
+  font-size: 60px;
+  color: #000;
+  text-align: center;
+}
+
+.indented_paragraph::before {
+  text-align: justify;
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  /* Встановити відступ зліва */
+}
+
+.indented_paragraph {
+  text-align: justify;
+}
+
+.img_flag {
+  width: 540px;
+  height: 300px;
+  padding: 0.5em;
+  border-color: #000;
+  border-radius: 20px;
+}
+
+.img_emblem {
+  width: 300px;
+  height: 300px;
+  padding: 0.5em;
+  border-color: #000;
+  border-radius: 20px;
+  display: block;
+  /* Зробити зображення блоком */
+  margin: 0 auto;
+  /* Горизонтальне центрування: автоматичні відступи по боках */
+}
+
+.bisiness_card {
+  text-align: center;
+}
+
+.p_text_alignment {
+  text-align: justify;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Pacifico";
+  font-size: 50px;
+  color: rgb(10, 10, 10);
+}
+
+.types_of_fonts {
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+
+.flag_svg {
+  display: flex;
+  align-items: center;
+}
+
+.flag_svg img,
+.flag_svg svg {
+  margin-right: 20px;
+  /* Простір між зображенням і SVG */
+}
+
+.flag_improved {
+  width: 50px;
+  height: 50px;
+  margin: 0 0 0 10px;
+}
+
+/* Стилі для лівої колонки */
+.img_column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Стилі для текстового блоку */
+.text-box {
+  border: 2px solid white;
+  /*  рамка */
+  padding: 15px;
+  /* додайте відступи які вам потрібно */
+  text-align: justify;
+
+}
+
+/* Стилі для правої колонки */
+.text_column {
+  background-color: white;
+  padding: 22px;
+  /* додайте відступи які вам потрібно */
+}
+
+/* Стилі для фотографій */
+.img_column img {
+  width: 100%;
+  /* Заповнює всю доступну ширину колонки */
+  margin-bottom: 23px;
+  /* Додайте відступи між фотографіями, які вам потрібно */
+}
+
+/* Стилі додаткові для сторінки 2*/
+
+.img_food {
+  width: 100%;
+}
+
+.img_author {
+  height: 690px;
+  width: auto;
+}
+
+.img_tourism {
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+  /* Збереже співвідношення сторін з обрізанням */
+}
+
+.img_tourism2 {
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+  /* Збереже співвідношення сторін з обрізанням */
+}
+
+.line_style {
+  border-color: rgb(5, 5, 5);
+  border-width: 1px;
+  border-style: solid;
+  margin-top: 2px;
+}
+
+p {
+  text-align: justify;
+}
+
+.text_paragraph {
+  font-size: 15px;
+  color: #000;
+}
+
+.square {
+  width: 100%;
+  /* Ширина квадрата */
+  height: 80px;
+  /* Висота квадрата */
+  color: #ffffff;
+  /* Колір тексту */
+  font-size: 35px;
+  font-family: "Czizh";
+  text-align: center;
+  /* Вирівнювання тексту по центру */
+  background-color: #000000;
+  /* Колір фону */
+  display: flex;
+  justify-content: center;
+  /* Вирівнювання по горизонталі по центру */
+  align-items: center;
+  /* Вирівнювання по вертикалі по центру */
+}
+
+
+.owl-carousel .item img {
+  height: 220px;
+  width: auto;
+}
+
+.improve_icons {
+  font-size: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.improve_icons2 {
+  font-size: 40px;
+  margin-left: 250px;
+  color: #510738;
+  box-shadow: 2px 2px 7px rgba(107, 12, 78, 0.5);
+  /* Горизонтальний відступ, вертикальний відступ, розмір розмиття, колір тіні */
+}
+
+.improve_icons3 {
+  font-size: 40px;
+  margin-left: 240px;
+  margin-right: 250px;
+  color: #761023;
+  box-shadow: 2px 2px 7px rgba(50, 3, 4, 0.5);
+  text-align: center;
+}
+
+.improve_icons4 {
+  font-size: 30px;
+  margin-left: 200px;
+  margin-right: 250px;
+  color: rgb(219, 147, 147);
+  box-shadow: 2px 2px 7px rgba(171, 110, 150, 0.5);
+  text-align: center;
+}
+
+/*Список з квадратними маркерами*/
+.square-list {
+  list-style-type: square;
+}
+
+.list_text {
+  font-size: 25px;
+  font-family: "Czizh";
+  color: rgb(8, 8, 8);
+  text-shadow: 2px 2px 3px rgba(36, 5, 52, 0.5);
+}
+
+#gallery-nested img {
+  width: 300px;
+  /* Встановіть бажану ширину */
+  height: 200px;
+  /* Встановіть бажану висоту */
+}
+
+/*6page*/
+.nature_location {
+  margin-left: 40px;
+}
+
+.nature_location2 {
+  margin-left: 20px;
+}
+
+.nature_location3 {
+  margin-left: 40px;
+}
+
+.footer_location {
+  margin-left: 70px;
+}
+
+h7 {
+  font-family: "Pacifico";
+  font-size: 25px;
+  color: rgb(223, 102, 140);
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  /* Горизонтальне вирівнювання в центрі */
+  align-items: center;
+  /* Вертикальне вирівнювання в центрі */
+  height: 300px;
+  /* Встановлення бажаної висоти контейнера */
+}
+
+.img_picture {
+  max-width: 100%;
+  /* Зображення не буде виходити за межі контейнера */
+  max-height: 100%;
+  /* Зображення не буде виходити за межі контейнера */
+}
+
+/*Spinners container
+.spinner-border {
+	margin-right: 5px;
+	margin: 0 0 0 240px;
+}*/
+
+
+.shadow_icons {
+  font-size: 25px;
+  text-align: center;
+  margin-left: 240px;
+  margin-right: 260px;
+  color: #510738;
+  box-shadow: 2px 2px 7px rgba(107, 12, 78, 0.5);
+}
+
+/*button css*/
+.square-button {
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px 40px;
+  background-color: #761023;
+  color: #fff;
+  text-decoration: none;
+  border: #000000;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.square-button:hover {
+  background-color: #060606;
+}
+
+.container_author {
+  padding: 0 20px 0 20px;
+}
+
+h6 {
+  margin-left: 70px;
+}
