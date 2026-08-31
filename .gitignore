@@ -1,3 +1,10 @@
 .env
 cloudflared.deb
+terraform.tfvars
 
+.terraform/
+*.tfstate
+*.tfstate.backup
+layer/python/
+**/__pycache__/
+*.zip
